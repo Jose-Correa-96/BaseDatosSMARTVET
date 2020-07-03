@@ -1,0 +1,14 @@
+CREATE TABLE [dbo].[PERSONA]
+(
+[CODPER] [varchar] (50) COLLATE Modern_Spanish_CI_AS NOT NULL,
+[NOMPER] [varchar] (50) COLLATE Modern_Spanish_CI_AS NOT NULL,
+[APEPER] [varchar] (100) COLLATE Modern_Spanish_CI_AS NOT NULL,
+[DIREC] [varchar] (150) COLLATE Modern_Spanish_CI_AS NOT NULL,
+[DNI] [numeric] (18, 0) NOT NULL,
+[TELEF] [numeric] (18, 0) NOT NULL,
+[EMAIL] [varchar] (150) COLLATE Modern_Spanish_CI_AS NOT NULL,
+[CODTPER] [char] (1) COLLATE Modern_Spanish_CI_AS NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[PERSONA] ADD CONSTRAINT [PK__PERSONA__B6D609AB61825781] PRIMARY KEY CLUSTERED  ([CODPER]) ON [PRIMARY]
+GO
